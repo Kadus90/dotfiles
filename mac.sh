@@ -186,8 +186,7 @@ mkdir ~/Developer/
 
 echo "Cloning repositories..."
 cd ~/Developer || exit
-git clone git@github.com:DylanTackoor/dotfiles.git
-git clone git@github.com:DylanTackoor/dylantackoor.com.git
+git clone git@github.com:Kadus90/dotfiles.git
 
 echo "Linking config files..."
 ln -s ~/.dotfiles/config/.zshrc ~/.zshrc
@@ -260,6 +259,8 @@ mas install 747633105  #Minify = HTML/CSS/JS minifier
 mas install 768053424  #Gapplin = SVG Viewer
 mas install 568494494  #Pocket
 mas install 1163798887 #Savage = SVG optimizer
+mas install 406056744 #Evernote
+mas install 1176895641 #Spark
 
 echo "Installing casks..."
 brew tap caskroom/cask
@@ -282,11 +283,11 @@ casks=(
     dash # Offline documentation downloader/indexer w/IDE plugins
     dropbox
     epic-games # Unreal Engine 4
-    etcher # Linux live USB creator
+    # etcher # Linux live USB creator
     firefox
     flux # Better dimming that night shift
     get-lyrical # Adds lyrics to music selected in iTunes
-    gfxcardstatus # Notifications when graphics card changes
+    # gfxcardstatus # Notifications when graphics card changes
     google-backup-and-sync # New Google Drive client
     google-chrome
     handbrake # Converts video formats
@@ -301,16 +302,16 @@ casks=(
     plex-media-player
     postman # Great API endpoint testing tool
     robomongo # MongoDB GUI
-    rstudio # Data Science R IDE
+    # rstudio # Data Science R IDE
     resilio-sync # P2P folder sync tool
     rocket # Gitmoji insertion tool
     sequel-pro # SQL GUI
     signal # Encrypted chat
     steam # Video games
-    teamviewer # Cross platform remote desktop
+    # teamviewer # Cross platform remote desktop
     telegram-desktop # Chat service
     the-unarchiver
-    toggldesktop # Time tracker
+    # toggldesktop # Time tracker
     transmission # Best Mac/Linux client
     typora # Markdown Editor
     virtualbox # Virtualization
@@ -319,9 +320,9 @@ casks=(
 
     flycut # clipboard history
     microsoft-teams # Slack clone
-    basecamp
-    harvest # Time tracker
-    spectacle
+    # basecamp
+    # harvest # Time tracker
+    # spectacle
 
     qladdict # Subtitle srt files
     qlcolorcode # Syntax highlighted sourcecode
@@ -389,7 +390,7 @@ extensions=(
     joelday.docthis # generates JS doc
     formulahendry.auto-rename-tag # mirrors tag changes to opening & closing tags
     robertohuertasm.vscode-icons
-    ms-vscode.cpptools
+    # ms-vscode.cpptools
 
     pmneo.tsimporter # automagically downloads typescript typings
 )
@@ -433,21 +434,21 @@ brew cleanup
 brew cask cleanup
 brew update; brew upgrade; brew prune; brew cleanup; brew doctor
 
-# TODO: confirm this is useful
-echo "Cleaning up Garage Band..."
-# TODO: only do this if actually installed
-sudo rm -rf /Applications/GarageBand
-sudo rm -rf /Library/Application Support/GarageBand
-sudo rm -rf /Library/Audio/Apple Loops/Apple/Apple\ Loops\ for\ GarageBand
-sudo rm -rf /Library/Receipts/com.apple.pkg.GarageBand_AppStore.bom
-sudo rm -rf /Library/Receipts/com.apple.pkg.GarageBand_AppStore.plist
-sudo rm -rf /System/Library/Receipts/com.apple.pkg.MAContent10_AssetPack_0325_AppleLoopsGarageBand1.bom
-sudo rm -rf /System/Library/Receipts/com.apple.pkg.MAContent10_AssetPack_0325_AppleLoopsGarageBand1.plist
-sudo rm -rf ~/Library/Application Scripts/com.apple.STMExtension.GarageBand
-sudo rm -rf ~/library/Containers/com.apple.STMExtension.GarageBand
+# # TODO: confirm this is useful
+# echo "Cleaning up Garage Band..."
+# # TODO: only do this if actually installed
+# sudo rm -rf /Applications/GarageBand
+# sudo rm -rf /Library/Application Support/GarageBand
+# sudo rm -rf /Library/Audio/Apple Loops/Apple/Apple\ Loops\ for\ GarageBand
+# sudo rm -rf /Library/Receipts/com.apple.pkg.GarageBand_AppStore.bom
+# sudo rm -rf /Library/Receipts/com.apple.pkg.GarageBand_AppStore.plist
+# sudo rm -rf /System/Library/Receipts/com.apple.pkg.MAContent10_AssetPack_0325_AppleLoopsGarageBand1.bom
+# sudo rm -rf /System/Library/Receipts/com.apple.pkg.MAContent10_AssetPack_0325_AppleLoopsGarageBand1.plist
+# sudo rm -rf ~/Library/Application Scripts/com.apple.STMExtension.GarageBand
+# sudo rm -rf ~/library/Containers/com.apple.STMExtension.GarageBand
 
-echo "Cleaning up Office..."
-sudo rm -rf /Applications/Microsoft\ Outlook.app
+# echo "Cleaning up Office..."
+# sudo rm -rf /Applications/Microsoft\ Outlook.app
 
 echo "Alphabetizing Launchpad..."
 defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock

@@ -26,4 +26,4 @@ source $ZSH/oh-my-zsh.sh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 export PATH="/usr/local/sbin:$PATH"
 
-[[ -s "/home/dylan/.gvm/scripts/gvm" ]] && source "/home/dylan/.gvm/scripts/gvm"
+[[ -s "/home/kadus/.gvm/scripts/gvm" ]] && source "/home/kadus/.gvm/scripts/gvm"
