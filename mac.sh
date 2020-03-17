@@ -55,7 +55,7 @@ sudo spctl --master-disable
 spctl --status
 
 echo "Setting lockscreen message..."
-sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "This Mac belongs to Dylan Tackoor. Contact at 786-471-5379 or mynameisdylantackoor@gmail.com"
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "This Mac belongs to Julian Phillips. Contact at 786-608-6262 or julian@julianlp.com"
 
 echo "Enabling tap to click for this user & login screen..."
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
@@ -415,19 +415,19 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false # Don’t display 
 cd ${ZSH_CUSTOM1:-$ZSH/custom}/plugins || exit
 git clone https://github.com/iam4x/zsh-iterm-touchbar.git
 
-echo "Configuring transmission..."
-mkdir ~/Downloads/Torrenting
-defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true # Use `~/Downloads/Torrenting` to store incomplete downloads
-defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Downloads/Torrenting"
-defaults write org.m0k.transmission DownloadAsk -bool false # Don’t prompt for confirmation before downloading
-defaults write org.m0k.transmission MagnetOpenAsk -bool false
-defaults write org.m0k.transmission DeleteOriginalTorrent -bool true # Trash original torrent files
-defaults write org.m0k.transmission WarningDonate -bool false # Hide donate message
-defaults write org.m0k.transmission WarningLegal -bool false # Hide legal disclaimer
-# Blocks bad IPs & updates list automatically
-defaults write org.m0k.transmission BlocklistNew -bool true
-defaults write org.m0k.transmission BlocklistURL -string "http://john.bitsurge.net/public/biglist.p2p.gz"
-defaults write org.m0k.transmission BlocklistAutoUpdate -bool true
+# echo "Configuring transmission..."
+# mkdir ~/Downloads/Torrenting
+# defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true # Use `~/Downloads/Torrenting` to store incomplete downloads
+# defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Downloads/Torrenting"
+# defaults write org.m0k.transmission DownloadAsk -bool false # Don’t prompt for confirmation before downloading
+# defaults write org.m0k.transmission MagnetOpenAsk -bool false
+# defaults write org.m0k.transmission DeleteOriginalTorrent -bool true # Trash original torrent files
+# defaults write org.m0k.transmission WarningDonate -bool false # Hide donate message
+# defaults write org.m0k.transmission WarningLegal -bool false # Hide legal disclaimer
+# # Blocks bad IPs & updates list automatically
+# defaults write org.m0k.transmission BlocklistNew -bool true
+# defaults write org.m0k.transmission BlocklistURL -string "http://john.bitsurge.net/public/biglist.p2p.gz"
+# defaults write org.m0k.transmission BlocklistAutoUpdate -bool true
 
 echo "Cleaning up Brew..."
 brew cleanup
