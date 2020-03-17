@@ -14,5 +14,5 @@ if [ -d ~/.dotfiles ]; then
     ./"${script}"
 else
     echo "Detected ${system}, downloading remote ${script}"
-    wget -q -O - "https://raw.githubusercontent.com/DylanTackoor/dotfiles/master/${script}" | bash
+    wget -q -O - "https://raw.githubusercontent.com/Kadus90/dotfiles/master/${script}" | bash
 fi
