@@ -253,14 +253,11 @@ mas upgrade
 echo "Installing Mac App Store apps..."
 mas install 497799835 #Xcode
 mas install 803453959  #Slack
-mas install 436203431  #XnConvert
 mas install 784801555  #OneNote
-mas install 747633105  #Minify = HTML/CSS/JS minifier
-mas install 768053424  #Gapplin = SVG Viewer
 mas install 568494494  #Pocket
-mas install 1163798887 #Savage = SVG optimizer
 mas install 406056744 #Evernote
 mas install 1176895641 #Spark
+mas install 926036361 #Lastpass
 
 echo "Installing casks..."
 brew tap caskroom/cask
