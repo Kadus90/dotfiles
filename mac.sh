@@ -198,8 +198,8 @@ git config --list
 echo "Installing Spacemacs prereqs..."
 # TODO: Refactor if possible
 brew tap d12frosted/emacs-plus
-brew tap caskroom/fonts
-brew cask install font-source-code-pro
+brew tap homebrew/cask-fonts
+brew cask install font-hack-nerd-font
 brew install emacs-plus --HEAD --with-natural-title-bars
 brew linkapps emacs-plus
 
