@@ -35,8 +35,8 @@ osascript -e 'tell application "System Preferences" to quit'
 echo "Enabling charging toggle sound..."
 defaults write com.apple.PowerChime ChimeOnAllHardware -bool true; open /System/Library/CoreServices/PowerChime.app &
 
-echo "Syncing time..."
-sudo ntpdate -u time.apple.com
+# echo "Syncing time..."
+# sudo ntpdate -u time.apple.com
 
 echo "Enabling keyrepeat globally..."
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
@@ -62,8 +62,8 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
-echo "Enabling dark mode..."
-defaults write /Library/Preferences/.GlobalPreferences.plist _HIEnableThemeSwitchHotKey -bool true
+# echo "Enabling dark mode..."
+# defaults write /Library/Preferences/.GlobalPreferences.plist _HIEnableThemeSwitchHotKey -bool true
 
 echo "Upping bluetooth audio quality..."
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Max (editable)" 80
@@ -135,9 +135,9 @@ defaults write com.apple.iCal "first day of week" -int 1
 echo "Enabling \"Do Not Track\" on Safari..."
 defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
 
-echo "Disabling parental controls on guest user..."
-sudo dscl . -mcxdelete /Users/guest
-sudo rm -rf /Library/Managed\ Preferences/guest
+# echo "Disabling parental controls on guest user..."
+# sudo dscl . -mcxdelete /Users/guest
+# sudo rm -rf /Library/Managed\ Preferences/guest
 
 echo "Disabling opening application prompt..."
 defaults write com.apple.LaunchServices LSQuarantine -bool false
@@ -157,18 +157,18 @@ sudo systemsetup -setremotelogin on
 echo "Changing screenshot location..."
 defaults write com.apple.screencapture location ~/Pictures/Screenshots/ && killall SystemUIServer
 
-echo "Setting wallpaper..."
-cd ~/Pictures/Wallpapers/ || exit
-wget http://i.imgur.com/YdfjXbv.jpg
-mv YdfjXbv.jpg Triforce.jpg
-sudo osascript -e '
-  tell application "System Events"
-      set theDesktops to a reference to every desktop
-      repeat with x from 1 to (count theDesktops)
-          set picture of item x of the theDesktops to "~/Pictures/Wallpapers/Triforce.jpg"
-      end repeat
-  end tell
-'
+# echo "Setting wallpaper..."
+# cd ~/Pictures/Wallpapers/ || exit
+# wget http://i.imgur.com/YdfjXbv.jpg
+# mv YdfjXbv.jpg Triforce.jpg
+# sudo osascript -e '
+  # tell application "System Events"
+      # set theDesktops to a reference to every desktop
+      # repeat with x from 1 to (count theDesktops)
+          # set picture of item x of the theDesktops to "~/Pictures/Wallpapers/Triforce.jpg"
+      # end repeat
+  # end tell
+# '
 
 echo "Enabling daily autoupdates..."
 defaults write com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true
