@@ -388,8 +388,18 @@ extensions=(
     formulahendry.auto-rename-tag # mirrors tag changes to opening & closing tags
     robertohuertasm.vscode-icons
     # ms-vscode.cpptools
-
     pmneo.tsimporter # automagically downloads typescript typings
+
+    # My plugins
+    dsznajder.es7-react-js-snippets
+    davidanson.vscode-markdownlint
+    coenraads.bracket-pair-colorizer
+    vscode-icons-team.vscode-icons
+    ms-azuretools.vscode-docker
+    abusaidm.html-snippets
+    ms-vscode.go
+    ms-vsliveshare.vsliveshare
+    vscodevim.vim
 )
 
 for extension in ${extensions[@]}
