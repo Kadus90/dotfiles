@@ -251,13 +251,15 @@ echo "Updating Mac App Store apps..."
 mas upgrade
 
 echo "Installing Mac App Store apps..."
-mas install 497799835 #Xcode
-mas install 803453959  #Slack
-mas install 784801555  #OneNote
-mas install 568494494  #Pocket
-mas install 406056744 #Evernote
-mas install 1176895641 #Spark
-mas install 926036361 #Lastpass
+mas install 497799835   #Xcode
+mas install 803453959   #Slack
+mas install 784801555   #OneNote
+mas install 568494494   #Pocket
+mas install 406056744   #Evernote
+mas install 1176895641  #Spark
+mas install 926036361   #Lastpass
+mas install 747648890   #Telegram
+
 
 echo "Installing casks..."
 brew tap caskroom/cask
@@ -400,6 +402,7 @@ extensions=(
     ms-vscode.go
     ms-vsliveshare.vsliveshare
     vscodevim.vim
+    daylerees.rainglow
 )
 
 for extension in ${extensions[@]}
