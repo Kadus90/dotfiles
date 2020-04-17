@@ -403,6 +403,8 @@ extensions=(
     ms-vsliveshare.vsliveshare
     vscodevim.vim
     daylerees.rainglow
+    esbenp.prettier-vscode
+    wallabyjs.quokka-vscode
 )
 
 for extension in ${extensions[@]}
