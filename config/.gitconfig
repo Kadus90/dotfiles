@@ -7,3 +7,6 @@
 
 [includeIf "gitdir:~/Developer/four-site/"]
     path = ~/Developer/four-site/.gitconfig
+
+[includeIf "gitdir:~/Developer/go"]
+    path = ~/Developer/four-site/.gitconfig
