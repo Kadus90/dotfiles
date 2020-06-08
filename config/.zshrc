@@ -111,3 +111,5 @@ source $ZSH/oh-my-zsh.sh
 export GOPATH=/Users/kadus/Developer/go
 
 bindkey -v
+
+alias weather="curl wttr.in/Miami"
