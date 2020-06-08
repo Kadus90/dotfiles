@@ -6,9 +6,7 @@
 # 	excludesfile = /home/kadus/.gitignore_global
 
 [includeIf "gitdir:~/Developer/four-site/"]
-    [user]
-        email = jp@four-site.com
+    path = ~/Developer/four-site/.gitconfig
 
-[includeIf "gitdir:~/Developer/go/src/four-site/foursite-web"]
-    [user]
-        email = jp@four-site.com
+[includeIf "gitdir:~/Developer/go/src/four-site/"]
+    path = ~/Developer/four-site/.gitconfig
