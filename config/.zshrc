@@ -110,6 +110,7 @@ source $ZSH/oh-my-zsh.sh
 
 export GOPATH=/Users/kadus/Developer/go
 
-bindkey -v
+# Removed due to clash with fuzzy search
+# bindkey -v
 
 alias weather="curl wttr.in/Miami"
