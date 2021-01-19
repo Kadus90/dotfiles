@@ -2,8 +2,8 @@
 	name = Julian Phillips
 	email = julian@julianlp.com
 
-# [core]
-# 	excludesfile = /home/kadus/.gitignore_global
+[core]
+	excludesfile = /home/kadus/.gitignore_global
 
 [includeIf "gitdir:~/Developer/four-site/"]
     path = ~/Developer/four-site/.gitconfig
